@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Properties | Abbasin Associates</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Include -->
+  <div data-include="partials/header.html"></div>
+
+  <!-- Hero Section -->
+  <section class="properties-hero">
+    <div class="section-container">
+      <h1>Explore Properties in B-17 Islamabad</h1>
+      <p>Plots, houses, and commercial listings — handpicked for you.</p>
+    </div>
+  </section>
+
+  <!-- Filter Panel -->
+  <section class="property-filters">
+    <div class="section-container">
+      <form class="filter-form" id="filter-form">
+
+        <select name="plot-size" id="plot-size">
+          <option value="">Plot Size</option>
+          <option value="5-marla">5 Marla</option>
+          <option value="10-marla">10 Marla</option>
+          <option value="1-kanal">1 Kanal</option>
+        </select>
+
+        <select name="property-type" id="property-type">
+          <option value="">Property Type</option>
+          <option value="residential">Residential Plot</option>
+          <option value="commercial">Commercial Plot</option>
+          <option value="house">House</option>
+        </select>
+
+        <select name="budget" id="budget">
+          <option value="">Budget</option>
+          <option value="below-50">Below PKR 50 Lac</option>
+          <option value="50-100">PKR 50 Lac – 1 Crore</option>
+          <option value="above-100">Above PKR 1 Crore</option>
+        </select>
+
+        <button type="submit" class="filter-submit">Apply Filters</button>
+        <button type="button" class="filter-reset" id="reset-filters">Reset</button>
+
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Result Count -->
+  <section>
+    <div class="section-container">
+      <div class="results-count" id="results-count">
+        Showing all properties
+      </div>
+    </div>
+  </section>
+
+  <!-- Property Grid -->
+  <section class="property-listings">
+    <div class="section-container">
+      <div class="property-grid">
+
+        <!-- Property 1 -->
+        <div class="property-card" data-size="5-marla" data-type="residential" data-budget="below-50">
+          <img src="images/property1.jpg" alt="5 Marla Plot Block A">
+          <div class="property-info">
+            <h3>5 Marla Plot – Block A</h3>
+            <p>Near park and mosque, ideal location for investment.</p>
+            <span class="price">PKR 60 Lac</span>
+            <a href="https://wa.me/923001234567" class="property-btn">Contact Now</a>
+          </div>
+        </div>
+
+        <!-- Property 2 -->
+        <div class="property-card" data-size="10-marla" data-type="house" data-budget="50-100">
+          <img src="images/property2.jpeg" alt="10 Marla House Block C">
+          <div class="property-info">
+            <h3>10 Marla House – Block C</h3>
+            <p>Brand new, 5-bed, 6-bath, near main boulevard.</p>
+            <span class="price">PKR 2.4 Crore</span>
+            <a href="https://wa.me/923001234567" class="property-btn">Contact Now</a>
+          </div>
+        </div>
+
+        <!-- Property 3 -->
+        <div class="property-card" data-size="1-kanal" data-type="residential" data-budget="above-100">
+          <img src="images/property3.jpg" alt="1 Kanal Plot Block E">
+          <div class="property-info">
+            <h3>1 Kanal Corner Plot – Block E</h3>
+            <p>Corner plot with extra land, possession ready.</p>
+            <span class="price">PKR 3.1 Crore</span>
+            <a href="https://wa.me/923001234567" class="property-btn">Contact Now</a>
+          </div>
+        </div>
+
+        <!-- Add more property-card items as needed -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Load More Button -->
+  <section class="property-pagination">
+    <div class="section-container">
+      <a href="#" class="load-more-btn">Load More Properties</a>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="contact-cta">
+    <div class="section-container">
+      <h2>Want to List Your Property?</h2>
+      <p>We can help you sell or rent your plot, house, or commercial unit in B-17 Islamabad.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="cta-primary">List Now</a>
+        <a href="https://wa.me/923001234567" target="_blank" class="cta-secondary">Message on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Include -->
+  <div data-include="partials/footer.html"></div>
+
+  <!-- Scripts -->
+  <script src="scripts/include.js"></script>
+  <script src="scripts/filter.js"></script>
+</body>
+</html>
